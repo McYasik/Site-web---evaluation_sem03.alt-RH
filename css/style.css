@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/** parametres generaux **/
+h2 {
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+ul {
+  list-style: none;
+}
+
+/** imports **/
+.main_content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.main_content .main_welcome {
+  width: 40%;
+}
+.main_content .div_flex60 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+.main_content .div_flex60 .main_product {
+  width: 100%;
+}
+.main_content .div_flex60 .div_flex100 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.main_content .div_flex60 .div_flex100 .main_search {
+  width: 50%;
+}
+.main_content .div_flex60 .div_flex100 .main_support {
+  width: 50%;
+}
+
+/** **/
+
+/*# sourceMappingURL=style.css.map */

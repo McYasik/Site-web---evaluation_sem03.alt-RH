@@ -1,0 +1,36 @@
+.main_content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  & .main_welcome{
+    width: 40%;
+  }
+
+  & .div_flex60{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+
+    & .main_product{
+      width: 100%;
+    }
+
+    & .div_flex100{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      & .main_search{
+        width: 50%;
+      }
+
+      & .main_support{
+        width: 50%;
+      }
+
+    }
+  }
+
+
+}

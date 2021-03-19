@@ -1,0 +1,29 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/** parametres generaux **/
+
+h2{
+  font-size: 1em;
+}
+
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+ul{
+  list-style: none;
+}
+
+/** imports **/
+
+@import "header.scss";
+@import "global.scss";
+@import "main.scss";
+@import "footer.scss";
+
+/** **/
