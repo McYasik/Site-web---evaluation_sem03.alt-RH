@@ -1,0 +1,27 @@
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #416271;
+  padding: 10px 10px;
+
+
+
+  & div{
+    display: flex;
+    justify-content: center;
+  }
+
+  & ul{
+    display: flex;
+    justify-content: right;
+
+    & li{
+      padding-left:15px;
+    }
+  }
+
+  & a{
+    font-size:0.7em;
+  }
+}

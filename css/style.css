@@ -1,7 +1,9 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: arial, sans-serif;
 }
 
 /** parametres generaux **/
@@ -19,6 +21,69 @@ ul {
 }
 
 /** imports **/
+header {
+  padding-top: 15px;
+}
+header img {
+  margin-left: 20px;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  background-color: #416271;
+}
+header nav ul {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li:hover {
+  list-style-image: url("../images/menu_arrow.gif");
+  /** provoque un déplacement léger du texte, laissé volontairement pour retour visuel intéressant **/
+}
+header nav ul a:hover {
+  color: orange;
+}
+
+.global_informations {
+  background-image: url("../images/green_box_bg.gif");
+  background-position-y: -100px;
+  background-position-x: -200px;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.global_informations .clock {
+  width: 20%;
+}
+.global_informations .presentation {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.global_informations .presentation h2 {
+  width: 100%;
+}
+.global_informations .presentation p {
+  text-align: justify;
+  width: 100%;
+}
+.global_informations .presentation .global_button {
+  width: 300px;
+}
+.global_informations .global_links {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
 .main_content {
   display: flex;
   flex-wrap: wrap;
@@ -45,6 +110,28 @@ ul {
 }
 .main_content .div_flex60 .div_flex100 .main_support {
   width: 50%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #416271;
+  padding: 10px 10px;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+}
+footer ul {
+  display: flex;
+  justify-content: right;
+}
+footer ul li {
+  padding-left: 15px;
+}
+footer a {
+  font-size: 0.7em;
 }
 
 /** **/

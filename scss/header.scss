@@ -1,0 +1,35 @@
+header{
+  padding-top: 15px;
+
+  & img{
+    margin-left: 20px;
+  }
+
+  & nav{
+    display: flex;
+    justify-content: center;
+    background-color: #416271;
+
+    & ul{
+      display: flex;
+      width: 100%;
+      height: 45px;
+      justify-content: center;
+      align-items: center;
+
+      & li{
+        margin: 0 20px;
+      }
+
+      & li:hover{
+        list-style-image: url("../images/menu_arrow.gif");
+
+        /** provoque un déplacement léger du texte, laissé volontairement pour retour visuel intéressant **/
+      }
+
+      & a:hover{
+        color: orange;
+      }
+    }
+  }
+}
