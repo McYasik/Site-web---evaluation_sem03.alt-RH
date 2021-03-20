@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap" rel="stylesheet">
     <title>Greefies Solution</title>
 </head>
 <body>
@@ -25,8 +26,8 @@
 
     <div class="presentation">
         <h2>What is your biological clock ?</h2>
-        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid blanditiis consequatur cumque dolor dolorum esse facilis labore minima minus molestias natus nesciunt odit officia officiis optio pariatur provident quaerat, quisquam quos repudiandae sequi voluptatem? Aliquam aliquid animi dignissimos, eos esse excepturi harum magnam placeat porro repudiandae sunt, velit vitae!"</p>
-        <div id="global_button"><button>Read more</button></div>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid blanditiis consequatur cumque dolor dolorum esse facilis labore minima minus molestias natus nesciunt odit officia officiis optio pariatur provident quaerat, quisquam quos repudiandae sequi voluptatem? Aliquam aliquid animi dignissimos, eos esse excepturi harum magnam placeat porro repudiandae sunt, velit vitae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid blanditiis consequatur cumque dolor dolorum esse facilis labore minima minus molestias natus  repudiandae sequi voluptatem?"</p>
+        <div id="global_button">read more</div>
     </div>
 
     <div class="global_links">
@@ -43,18 +44,26 @@
 <div class="main_content">
 
     <div class="main_welcome">
-        <h2>Welcome to greefies</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, repellat, sint! Accusantium adipisci cumque enim eveniet expedita facilis, harum itaque, iusto maiores modi nisi obcaecati optio quia repellendus ut voluptatibus?</p>
-        <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-        </ul>
-        <div id="plante_div"><img src="./images/pic1.jpg" alt="plante en pot"></div>
-        <div id="wrap_div">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi nisi placeat quae quo reprehenderit ullam. Ab, architecto doloribus illum ipsum nostrum perferendis, porro reiciendis reprehenderit sequi similique tempora voluptas.</p>
-            <a href="#" class="readmore">read more <img src="./images/orange_bullet.gif" alt="orange bullet"></a>
+        <div id="main_background"><h2>Welcome to greefies</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, repellat, sint! Accusantium adipisci cumque enim eveniet expedita facilis, harum itaque, iusto maiores modi nisi obcaecati optio quia repellendus ut voluptatibus? Accusantium adipisci cumque enim eveniet expedita facilis."</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <div class="dashed"></div>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <div class="dashed"></div>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <div class="dashed"></div>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <div class="dashed"></div>
+            </ul>
+
+            <div id="wrap_div">
+                <img src="./images/pic1.jpg" alt="plante en pot" id="plante_pot">
+                <div id="texte_plante">
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab animi nisi placeat quae quo reprehenderit ullam. Ab, architecto doloribus illum ipsum nostrum perferendis, porro reiciendis reprehenderit sequi similique tempora voluptas."</p>
+                    <a href="#" class="readmore">read more <img src="./images/orange_bullet.gif" alt="orange bullet"></a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -63,7 +72,7 @@
         <div class="main_product">
             <h2>Our Products</h2>
 
-            <div>
+            <table>
                 <tr>
                     <td><img src="./images/box_icon.gif" alt="image de cadeau"></td>
                     <td>
@@ -72,13 +81,15 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2" class="table_readmore">
                         <a href="#" class="readmore">read more <img src="./images/orange_bullet.gif" alt="orange bullet"></a>
                     </td>
                 </tr>
-            </div>
+            </table>
 
-            <div>
+            <div class="dashed"></div>
+
+            <table>
                 <tr>
                     <td><img src="./images/box_icon.gif" alt="image de cadeau"></td>
                     <td>
@@ -87,34 +98,46 @@
                     </td>
                 </tr>
                 <tr>
-                <td colspan="2">
-                    <a href="#" class="readmore">read more <img src="./images/orange_bullet.gif" alt="orange bullet"></a>
-                </td>
+                    <td colspan="2" class="table_readmore">
+                        <a href="#" class="readmore">read more <img src="./images/orange_bullet.gif" alt="orange bullet"></a>
+                    </td>
                 </tr>
-            </div>
+            </table>
+
+            <div class="dashed"></div>
 
         </div>
 
         <div class="div_flex100">
+
             <div class="main_search">
-                <h3>Dolore magna aliqua</h3>
-                <input type="text">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <img src="./images/search.gif" alt="une loupe">
+                <div id="search_text">
+                    <h3>Dolore magna aliqua</h3>
+                    <input type="text">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div id="search_img"><img src="./images/search.gif" alt="une loupe"></div>
             </div>
 
             <div class="main_support">
-                <h3>Dolore magna aliqua</h3>
+                <h3>Free Customers Supports</h3>
+
                 <div>
                     <img src="./images/phone_icon.gif" alt="logo téléphone">
-                    <p>0700 679 122 489</p>
-                    <p>0700 679 122 489</p>
+                    <ul>
+                        <li>0700 679 122 489</li>
+                        <li>0700 679 122 489</li>
+                    </ul>
                 </div>
+
                 <div>
                     <img src="./images/contact_icon.gif" alt="logo mail">
-                    <p>info@company.com</p>
-                    <p>contact@company.com</p>
+                    <ul>
+                        <li>info@company.com</li>
+                        <li>contact@company.com</li>
+                    </ul>
                 </div>
+
             </div>
             
         </div>

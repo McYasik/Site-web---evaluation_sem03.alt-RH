@@ -6,35 +6,71 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: whitesmoke;
 
   .clock{
     width: 20%;
   }
 
   .presentation{
-    width: 45%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-left: 30px;
+    margin-bottom: 10px;
 
     & h2{
       width: 100%;
+      margin-top: 20px;
     }
 
     & p{
       text-align: justify;
       width: 100%;
+      margin: 10px 0;
+      font-size: 0.7em;
+      font-weight: lighter;
+      line-height: 1.5em;
     }
 
-    & .global_button{
-      width: 300px;
+    & #global_button{
+      background-image: url("../images/read_more_bg.gif");
+      background-size:cover;
+      background-position: center center;
+      width: max-content;
+      height: max-content;
+      font-size: 0.8em;
+      padding: 10px 40px;
+    }
+
+    #global_button:hover{
+      background-image: url("../images/read_more_bg_white.gif");
+      padding: 10px 50px;
+      border-radius: 5px;
     }
   }
 
   .global_links{
     display: flex;
     justify-content: center;
-    width: 30%;
+    font-weight: 300;
+    font-size:0.6em;
+    letter-spacing: 0.1em;
+    margin-left: 5%;
+
+    & li{
+      background-image: url("../images/right_nav.gif");
+      display: flex;
+      align-items: center;
+      height: 30px;
+      padding: 0 35px 0 40px;
+      margin: 10px 0;
+    }
+    & li:hover{
+      background-image: url("../images/right_nav_a.gif");
+    }
   }
 
 }

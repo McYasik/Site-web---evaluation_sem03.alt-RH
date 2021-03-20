@@ -9,6 +9,7 @@ header{
     display: flex;
     justify-content: center;
     background-color: #416271;
+    font-weight: 300;
 
     & ul{
       display: flex;
@@ -23,7 +24,6 @@ header{
 
       & li:hover{
         list-style-image: url("../images/menu_arrow.gif");
-
         /** provoque un déplacement léger du texte, laissé volontairement pour retour visuel intéressant **/
       }
 

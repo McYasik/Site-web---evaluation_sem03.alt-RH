@@ -2,31 +2,199 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 15px;
+  padding-right: 30px;
+
+  & a{
+    color: #f6951e;
+    font-size: 0.7em;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+
+    & img{
+      margin-left: 10px;
+    }
+  }
+
+  & a:hover{
+    color: #68a4c5;
+  }
+
+  & h2{
+    color: #f6951e;
+    padding-top: 10px;
+  }
+
+  & p{
+    font-size: 0.7em;
+    line-height: 1.5em;
+    padding: 10px 0;
+    text-align: justify;
+    font-weight: 300;
+  }
+
+  & .dashed {
+    padding: 0 10px;
+    border-bottom: dashed 1px #bedf77;
+  }
+
+
+  /** parties welcome **/
+
 
   & .main_welcome{
     width: 40%;
+
+
+    & #main_background{
+      background: linear-gradient(#ececec, #ffffff);
+      margin: 0 15px;
+      padding: 0 10px;
+    }
+
+    & ul {
+      color: #68a4c5;
+      font-size: 0.9em;
+
+
+      & li {
+        margin-left: 30px;
+        padding: 5px 0;
+        list-style-image: url("../images/left_nav_arrow.gif");
+      }
+
+    }
+
+    & #wrap_div{
+      width: 100%;
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+
+      & #plante_pot{
+        border: 1px solid #bedf77;
+        width:30% ;
+      }
+
+      & #texte_plante{
+        width:70%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-left: 10px;
+      }
+    }
   }
+
 
   & .div_flex60{
     display: flex;
     flex-wrap: wrap;
     width: 60%;
 
+
+    /** parties our products **/
+
+
     & .main_product{
       width: 100%;
+
+      & td{
+        padding: 0 10px;
+
+        & p{
+          text-align: justify;
+        }
+      }
+
+      & tr{
+        border-bottom: #bedf77 dashed 1px;
+      }
+
+      & .readmore{
+        float: right;
+      }
+
+      & .dashed{
+        margin: 10px 15px 0 15px;
+      }
     }
 
     & .div_flex100{
       display: flex;
-      flex-wrap: wrap;
+      justify-content: space-evenly;
       width: 100%;
+      margin-top: 20px;
+
+
+      /** parties search **/
+
 
       & .main_search{
-        width: 50%;
+        width: 55%;
+        height: max-content;
+        background-image: url("../images/contact_info_bg.gif");
+        padding: 15px 15px 0 15px;
+        border-radius: 10px;
+        display: flex;
+
+        & p{
+          font-size: 0.7em;
+          color: #868686;
+        }
+
+        & #search_text{
+          width: 80%;
+          height: 100%;
+
+          & input{
+            width: 90%;
+            padding: 3px 5px;
+            border: 1px darkgrey solid;
+            margin: 5px 0;
+          }
+        }
+
+        & #search_img{
+          width: 20%;
+          height: auto;
+          display: flex;
+          align-items: center;
+        }
+
       }
 
+
+      /** parties support **/
+
+
       & .main_support{
-        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+
+        & h3{
+          width: 100%;
+        }
+
+        & div{
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          height: 30%;
+          align-items: flex-start;
+
+          & img{
+            width: max-content;
+          }
+        }
+
+        & li{
+          font-size: 0.7em;
+          font-weight: 300;
+          margin-left: 20px;
+        }
       }
 
     }
