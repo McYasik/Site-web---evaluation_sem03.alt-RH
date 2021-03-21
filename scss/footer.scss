@@ -28,4 +28,8 @@ footer{
   & a:hover{
     color: #f6951e;
   }
+
+  & li:active{
+    transform: translateY(-5px);
+  }
 }

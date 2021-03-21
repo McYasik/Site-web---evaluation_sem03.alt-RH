@@ -59,6 +59,9 @@ header nav ul li:hover {
   list-style-image: url("../images/menu_arrow.gif");
   /** provoque un déplacement léger du texte, laissé volontairement pour retour visuel intéressant **/
 }
+header nav ul li:active {
+  transform: translateY(-5px);
+}
 header nav ul a:hover {
   color: orange;
 }
@@ -110,6 +113,10 @@ header nav ul a:hover {
   background-image: url("../images/read_more_bg_white.gif");
   padding: 10px 50px;
   border-radius: 5px;
+  cursor: pointer;
+}
+.global_informations .presentation #global_button:active {
+  transform: translateY(-5px);
 }
 .global_informations .global_links {
   display: flex;
@@ -129,6 +136,10 @@ header nav ul a:hover {
 }
 .global_informations .global_links li:hover {
   background-image: url("../images/right_nav_a.gif");
+  cursor: pointer;
+}
+.global_informations .global_links li:active {
+  transform: translateY(-5px);
 }
 
 .main_content {
@@ -151,6 +162,9 @@ header nav ul a:hover {
 }
 .main_content a:hover {
   color: #68a4c5;
+}
+.main_content a:active {
+  transform: translateY(-5px);
 }
 .main_content h2 {
   color: #f6951e;
@@ -285,6 +299,152 @@ header nav ul a:hover {
   margin-left: 20px;
 }
 
+@media (max-width: 450px) {
+  .main_product img {
+    width: 30px;
+  }
+
+  .main_support div {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+  }
+  footer ul {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    margin-bottom: 10px;
+  }
+  footer ul li {
+    width: 50%;
+    text-align: center;
+    padding-left: 0 !important;
+  }
+}
+@media (max-width: 550px) {
+  nav ul {
+    padding-bottom: 10px;
+    height: max-content !important;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-top: 10px !important;
+  }
+
+  .main_content .div_flex100 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_content .div_flex100 .main_search {
+    width: 80% !important;
+  }
+  .main_content .div_flex100 .main_support {
+    margin-left: 0 !important;
+    margin-top: 15px;
+    flex-direction: row !important;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-right: 25px;
+  }
+  .main_content .div_flex100 .main_support h3 {
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  .global_informations {
+    flex-direction: column;
+  }
+  .global_informations .presentation {
+    margin: 0;
+    padding-top: 0 !important;
+  }
+  .global_informations .presentation h2 {
+    margin-top: 0;
+  }
+  .global_informations .global_links {
+    margin: 0;
+  }
+  .global_informations .clock {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .global_informations .clock img {
+    width: 80% !important;
+  }
+}
+@media (max-width: 850px) {
+  .global_informations {
+    flex-wrap: wrap;
+    height: max-content;
+    background-position-y: center;
+    background-position-x: center;
+  }
+  .global_informations .clock {
+    width: 15%;
+  }
+  .global_informations .clock img {
+    width: 150%;
+  }
+  .global_informations .presentation {
+    width: 80%;
+    padding: 20px;
+  }
+  .global_informations .global_links {
+    width: 100%;
+  }
+  .global_informations .global_links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .global_informations .global_links ul li {
+    margin: 10px 5px;
+  }
+
+  .main_content {
+    padding-right: 0;
+  }
+  .main_content .main_welcome {
+    width: 100%;
+  }
+  .main_content .main_welcome ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_content .main_welcome #wrap_div {
+    justify-content: center;
+    width: 100%;
+  }
+  .main_content .main_welcome #wrap_div #plante_pot {
+    width: 20% !important;
+  }
+  .main_content .main_welcome #wrap_div #texte_plante {
+    width: 80%;
+  }
+  .main_content .main_welcome #wrap_div #texte_plante .readmore {
+    padding-right: 15px;
+  }
+  .main_content .main_welcome .dashed {
+    width: 80%;
+  }
+  .main_content .div_flex60 {
+    padding: 0 10px;
+    margin: 15px 15px 0 15px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .main_search {
+    width: 400px;
+  }
+
+  .main_support {
+    margin-left: 0;
+  }
+}
 @media (min-width: 1200px) {
   .main_content #plante_pot {
     width: 120px !important;
@@ -293,7 +453,6 @@ header nav ul a:hover {
     width: 400px !important;
   }
 }
-
 footer {
   display: flex;
   align-items: center;
@@ -317,6 +476,9 @@ footer a {
 }
 footer a:hover {
   color: #f6951e;
+}
+footer li:active {
+  transform: translateY(-5px);
 }
 
 /** **/

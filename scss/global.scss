@@ -49,6 +49,11 @@
       background-image: url("../images/read_more_bg_white.gif");
       padding: 10px 50px;
       border-radius: 5px;
+      cursor:pointer;
+    }
+
+    #global_button:active{
+      transform: translateY(-5px);
     }
   }
 
@@ -70,6 +75,11 @@
     }
     & li:hover{
       background-image: url("../images/right_nav_a.gif");
+      cursor:pointer;
+    }
+
+    & li:active{
+      transform: translateY(-5px);
     }
   }
 
